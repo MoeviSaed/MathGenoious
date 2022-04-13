@@ -9,7 +9,7 @@ public abstract class QuestionGenerator : MonoBehaviour, IQuestion
 
     public void Initialize()
     {
-        question = sumOrMinusQuestion();
+        question = SumOrMinusQuestion();
     }
 
     public string GetString()
@@ -22,7 +22,7 @@ public abstract class QuestionGenerator : MonoBehaviour, IQuestion
         return answer == this.answer;
     }
 
-    public string sumOrMinusQuestion()
+    public string SumOrMinusQuestion()
     {
         int operand1 = Mathf.FloorToInt(Random.value * 100);
         int operand2 = Mathf.FloorToInt(Random.value * 100);

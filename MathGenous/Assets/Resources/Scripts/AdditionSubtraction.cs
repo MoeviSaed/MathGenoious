@@ -7,7 +7,7 @@ public class AdditionSubtraction : QuestionGenerator
 
     private void Start()
     {
-        question = GetString();
+        Initialize();
     }
 
 }
